@@ -1,6 +1,7 @@
 #include"spline.h"
 #include<iostream>
-using namespace std;
+using std::cout;
+using std::vector;
 int main()
 {
 	vector<MYPOINT> a;vector<MYPOINT>  ds;
@@ -11,16 +12,11 @@ int main()
 	//MYPOINT  ax5 = { 3,3,8 }; a.push_back(ax5);
 	//MYPOINT  ax6 = { 4,4,9 }; a.push_back(ax6);
 
-
-	ds=convert2d(1.57,0,a,1,0,0);
-	SPLINE s;
+	Spline s;
 	vector<MYPOINT>  re,re2,re3;
-	s.setVertex(a,97);
+	s.setVertex(a,200);
 	re=s.spline_create();
-	MYPOINT  ax7 = { 4,2,9 }; 
-	re2=s.spine_modify(2,5,10,ax7);
-	MYPOINT  ax8 = { 3,4,10 }; 
-	re3=s.spine_modify(2,7,45,ax8);
+	
 
 	return 0;
 }
