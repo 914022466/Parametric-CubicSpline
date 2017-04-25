@@ -1,0 +1,3 @@
+﻿project(Parametric_CubicSpline)
+set(SRC_LIST 源.cpp Spline.cpp)
+add_executable(Parametric_CubicSpline ${SRC_LIST})
